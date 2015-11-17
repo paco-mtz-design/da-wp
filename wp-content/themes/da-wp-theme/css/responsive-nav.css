@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*
+Local Site
+Styles for Dâ Wearhouse Website
+Main Stylesheet
+! responsive-nav.js 1.0.32 by @viljamis 
+*/
+
+.nav-collapse ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+}
+.nav-collapse ul li {
+	width: 100%;
+	display: block;
+}
+	
+.js .nav-collapse {
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.nav-collapse.opened {
+	max-height: 9999px;
+}
+
+.disable-pointer-events {
+	pointer-events: none !important;
+}
+
+.nav-toggle {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 30px;
+	font-size: 24px;
+	display: inline-block;
+}
+
+@media screen and (min-width: 800px) {
+	.nav-collapse ul li {
+		width: auto;
+		display: inline-block;
+	}	
+	.js .nav-collapse {
+		position: relative;
+	}
+	.js .nav-collapse.closed {
+		max-height: none;
+	}
+	.nav-toggle {
+		display: none;
+	}
+}

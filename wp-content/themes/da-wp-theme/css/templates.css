@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+Local Site
+Styles for Dâ Wearhouse Website
+Aux Stylesheet - Interiors & Templates
+*/
+
+.single_product {}
+.single_campaign {}
+.single_lookbook {}
+.index_collections {}
+
+/* Product Template */
+.product_info {
+	overflow: hidden;
+}
+
+.product_image { width: 55%; float:left;}
+.product_image ul.thumbs { width: 14%; float: right;}
+.product_image ul.thumbs li {margin-bottom: -4px;}
+.product_image div#slideshow {width: 84%; float:left;}
+.product_description { width: 40%; float: right;}
+.product_description .buy_button {
+	color: white;
+	background-color: #f18011;
+	border-radius: 3px;
+	moz-border-radius: 3px;
+	webkit-border-radius: 3px;
+	padding: 10px 20px;
+	line-height: 3.5em;
+	cursor: pointer;
+}
+.sales_disclaimer {
+	border-top: 1px solid #f0f0f0;
+	padding-top: 1.5em;
+}
+
+/* More Products */
+.more_products { margin-top: 5.625em; margin-bottom: 4.125em;}
+.more_products ul { text-align: center;}
+.more_products ul li { width: 16.666%; display: inline-block; margin-top:-4px;}
+
+/* Lookbook Template */
+.lookbook_images { margin-bottom: 4.125em; position: relative; top:4px;}
+.lookbook_images ul { text-align: center;}
+.lookbook_images ul li { width: 33.333%; display: inline-block; margin-top:-4px;}
+
+/* Campaign Template */
+.campaign_images {margin-bottom: 4.125em;}
+.campaign_images ul { text-align: center;}
+.campaign_images ul li img {
+	max-height: 700px;
+	margin-bottom:-4px;
+	}

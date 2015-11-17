@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*
+Local Site
+Styles for Dâ Wearhouse Website
+Media Queries
+*/
+
+@media screen and (min-width: 1400px) {
+	/* Debugging
+	body {border: 2px solid #F30;}
+	*/
+	#container { padding: 60px 12%;}
+	.product_image { width: 40%; float:left;}
+	.product_description { width: 55%; float: right; padding-right:20%;}
+	/* Home */
+	#featured_slider ul li h2 {font-size: 6em; width: 80%;}
+	/* PreFooter & the like */
+	.home_grid div.col1 h2,
+	.pre_footer div.col1 h2 { padding: 1em; font-size: 3em;}
+	
+}
+
+@media screen and (max-width: 1400px) {
+	/* Debugging
+	body {border: 2px solid #FC0;}
+	*/
+}
+
+@media screen and (max-width: 800px) {
+	/* Debugging
+	body {border: 2px solid #39F;}
+	*/
+	#top_menu h1 {	position: relative; top: 20px;}
+	.home_grid div  { min-height:200px; max-height: 300px; }	
+	#home_cover { height: 70%;}
+	#container { padding: 30px;}
+	/* Menu */
+	.nav-collapse ul li {border-bottom: 1px solid #f2f2f2;}
+	.nav-collapse ul li a { padding: 2% 40%;}
+	.nav-collapse ul li:hover { border-bottom: 1px solid #c4c4c4;}
+	/* Home */
+	#featured_slider ul li h2 {font-size: 2.4em; width: 100%;}	
+	/* PreFooter & the like */
+	.pre_footer div { min-height: 300px;}
+	.home_grid div.col1 h2,
+	.pre_footer div.col1 h2 { padding: .4em; font-size: 1.2em;}
+	/* Footer */
+	nav#footer_menu ul li a span.large,
+	nav#footer_menu ul li.large { display: none;}
+	nav#footer_menu ul li a span.collapsed { display: inline;}
+	/* Product Single Gallery */
+	.product_image ul.thumbs { width: 24%;}
+	.product_image div#slideshow {width: 74%;}
+	/* More Products */
+	.more_products ul li { width: 25%;}
+	
+	
+}
+
+@media screen and (max-width: 500px) {
+	/* Debugging
+	body {border: 2px solid #9F0;}
+	*/
+	#top_menu h1 {
+	background-size: 70%;
+	height: 70px;
+	position: relative;
+	top: 40px;}
+	#home_cover { height: 50%;}
+	#container { padding: 30px 10px;}
+	.home_grid div  { min-height: 100px; max-height: 200px;}
+	/* Home */
+	.cover_info h1 {	line-height: 2em;}
+	.cover_info h2 { font-size: 1em; line-height: 1em;}
+	#featured_slider ul li h2 {font-size: 1.6em; width: 100%;}
+	.home_grid div p a { padding: .1em .4em; font-size: 1em;}	
+	.home_grid div p a span,
+	.home_grid div h2 a span {display:none;}
+	/* PreFooter & the like */
+	.pre_footer { height: 300px; padding-top: 0;}
+	.pre_footer div { min-height: 200px;}
+	.home_grid div.col1 h2,
+	.pre_footer div.col1 h2 { padding: .4em; font-size: 1em;}	
+	/* Products */
+	.product_image { margin-bottom: 1em;}
+	.product_image, .product_description { width: 100%;}
+	/* Product Single Gallery */
+	.product_image ul.thumbs { width: 20%;}
+	.product_image div#slideshow {width: 80%;}
+	/* More Products */
+	.more_products ul li { width: 33.333%;}
+	/* Footer */
+	nav#footer_menu {margin-top: 30px;}
