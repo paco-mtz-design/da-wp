@@ -4,17 +4,23 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/templates.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/type.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/sidebar.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/queries.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/responsive-nav.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/jquery.desoslide.min.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo "$main_url"; ?>/css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/templates.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/type.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/queries.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive-nav.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.desoslide.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css" />
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/responsive-nav.js"></script>
+		<script type="text/javascript" src="https://www.kichink.com/js/api/v1.0/kichink.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.desoslide.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +40,13 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+
+		<!-- CD-Sidebar --><div id="st-container" class="st-container">
+		<!-- content push wrapper -->
+		<!-- CD-Sidebar --><div class="st-pusher">
+		<!-- CD-Sidebar --><div class="st-content"><!-- this is the wrapper for the content -->
+		<!-- CD-Sidebar --><div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+		<!-- the content tha will be pushed goes here-->
 
 		<div id="home_cover">
 			<div class="cover_info">
