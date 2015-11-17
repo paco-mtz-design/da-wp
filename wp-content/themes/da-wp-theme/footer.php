@@ -1,15 +1,15 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
+		<footer id="footer">
+				<nav id="footer_menu">
+						<ul>
+								<li><a href="https://www.facebook.com/dawearhouse424" target="_blank"><span class="large">Facebook</span><span class="collapsed socicon">b</span></a></li>
+								<li><a href="https://twitter.com/dawearhousemx" target="_blank"><span class="large">Twitter</span><span class="collapsed socicon">a</span></a></li>
+								<li><a href="http://instagram.com/dawearhouse" target="_blank"><span class="large">Instagram</span><span class="collapsed socicon">x</span></a></li>
+								<li><a href="http://www.pinterest.com/DaWearhouse/" target="_blank"><span class="large">Pinterest</span><span class="collapsed socicon">d</span></a></li>
+								<li class="large"><a href="https://www.kichink.com/stores/dawearhouse#.U_JLbrxdWe2" target="_blank"><span class="large">Kichink</span></a></li>
+								<li class="large"><a href="http://raidho.mx/" target="_blank"><span class="large">Web by Raidho</span></a></li>
+						</ul>
+				</nav>
+		</footer>
 
 		</div>
 		<!-- /wrapper -->
