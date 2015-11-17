@@ -48,12 +48,17 @@
 		<!-- CD-Sidebar --><div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 		<!-- the content tha will be pushed goes here-->
 
-		<div id="home_cover">
-			<div class="cover_info">
-				<h1>Dâmoiselle</h1>
-				<h2>Fall Delivery.</h2>
+
+		<?php if ( is_home() ) { ?>
+
+			<div id="home_cover">
+				<div class="cover_info">
+					<h1>Dâmoiselle</h1>
+					<h2>Fall Delivery.</h2>
+				</div>
 			</div>
-		</div>
+
+		<?php } ?>
 
 		<!-- container -->
 		<div id="container">
