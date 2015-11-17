@@ -14,16 +14,62 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<div class="product_image">
-					<ul class="thumbs">
-						<li></li>
-					</ul>
-					<div id="slideshow">
-						<!-- post thumbnail -->
-						<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-								<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-						<?php endif; ?>
-						<!-- /post thumbnail -->
-					</div>
+
+					<?php
+
+					$args = array(
+						'numberposts' => -1, // Using -1 loads all posts
+						'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager
+						'order'=> 'ASC',
+						'post_mime_type' => 'image', // Make sure it doesn't pull other resources, like videos
+						'post_parent' => $post->ID, // Important part - ensures the associated images are loaded
+						'post_status' => null,
+						'post_type' => 'attachment'
+					);
+
+					$images = get_children( $args );
+					// continued below ...
+					?>
+
+					<?php if($images){ ?>
+						<script type="text/javascript">
+
+						$(window).load(function() {
+
+							$('#slideshow').desoSlide({
+								thumbs: $('ul.thumbs li > a'),
+								overlay: 'none',
+								interval: 1500,
+								effect: {
+									provider: null,
+									name: 'fade',
+								},
+								controls: {
+									show: false,
+									keys: true
+								}
+							});
+
+						});
+						</script>
+
+						<ul class="thumbs">
+							<?php foreach($images as $image){ ?>
+								<li>
+									<a href="<?php echo $image->guid; ?>">
+										<img src="<?php echo $image->guid; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
+									</a>
+								</li>
+							<?php } ?>
+						</ul>
+
+						<div id="slideshow">
+							<?php foreach($images as $image){ ?>
+								<img src="<?php echo $image->guid; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
+							<?php } ?>
+						</div>
+
+					<? } ?>
 				</div>
 
 				<div class="product_description">
