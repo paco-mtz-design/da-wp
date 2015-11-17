@@ -34,11 +34,12 @@
 			</div>
 		</div>
 
+		<!-- container -->
 		<div id="container">
 
 		<div id="top_menu">
 			<a href="<?php echo home_url(); ?>"><h1>Dâ Wearhouse</h1></a>
-			<nav class="nav-collapse">
+			<nav class="nav-collapse" role="navigation">
 				<ul  id="st-trigger-effects">
 					<li><a href="<?php echo home_url(); ?>">Inicio</a></li>
 					<!-- li id="st-trigger-effects"><a href="#" title="st-effect-3">Acerca</a></li -->
@@ -54,24 +55,3 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
