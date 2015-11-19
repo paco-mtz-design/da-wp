@@ -462,4 +462,41 @@ add_filter('single_template', create_function(
 	return $the_template;' )
 );
 
+//Adds Options capability for ACF
+
+if( function_exists('acf_add_options_page') ) {
+
+	$page = acf_add_options_page(array(
+		'page_title' 	=> 'Opciones Generales',
+		'menu_title' 	=> 'Opciones Sitio',
+		'menu_slug' 	=> 'opciones-sitio',
+		'capability' 	=> 'edit_posts',
+		'redirect' 	=> true
+	));
+}
+
+if( function_exists('acf_add_options_sub_page') )
+{
+	acf_add_options_sub_page(array(
+		'title' => 'Imágenes Home',
+		'parent' => 'opciones-sitio'
+	));
+}
+
+if( function_exists('acf_add_options_sub_page') )
+{
+	acf_add_options_sub_page(array(
+		'title' => 'Contenido Destacado',
+		'parent' => 'opciones-sitio'
+	));
+}
+
+if( function_exists('acf_add_options_sub_page') )
+{
+	acf_add_options_sub_page(array(
+		'title' => 'Disclaimer Prendas',
+		'parent' => 'opciones-sitio'
+	));
+}
+
 ?>
