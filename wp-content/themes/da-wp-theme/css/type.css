@@ -52,7 +52,6 @@ strong {font-weight: bold;}
 .cover_info h1 {
 	text-align: center;
 	text-indent: -9999px;
-	line-height: 11.5em;
 }
 .cover_info h2 {
 	font-size: 1.5em;
@@ -101,14 +100,3 @@ strong {font-weight: bold;}
 .campaign_images > h2,
 .lookbook_images > h2,
 .more_products h2 { font-weight: normal; text-align: center; text-transform: uppercase;}
-
-
-
-
-
-
-
-
-
-
-

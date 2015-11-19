@@ -23,7 +23,9 @@ body, html {
 	  height: 100%;
 }
 #home_cover {
-	background: url(img/back-home.jpg) no-repeat center center fixed;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -39,7 +41,6 @@ body, html {
 	text-align: center;
 }
 .cover_info h1 {
-	background-image: url(img/logo-daisy-home.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;

@@ -53,10 +53,10 @@
 
 		<?php if ( is_home() ) { ?>
 
-			<div id="home_cover">
+			<div id="home_cover" style="background-image: url(<?php the_field('home-main-cover-img', 'option'); ?>)">
 				<div class="cover_info">
-					<h1>Dâmoiselle</h1>
-					<h2>Fall Delivery.</h2>
+					<h1 style="background-image: url(<?php the_field('home-collection-logo', 'option'); ?>)">Dâmoiselle</h1>
+					<h2><?php the_field('home-collection-tagline', 'option'); ?></h2>
 				</div>
 			</div>
 
