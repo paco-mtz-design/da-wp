@@ -13,6 +13,7 @@
 						</li>
 					</ul>
 				</div>
+
 				<div
 				class="col1"
 				style="background-image:url(

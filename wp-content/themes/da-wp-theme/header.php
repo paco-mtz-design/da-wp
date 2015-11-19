@@ -1,11 +1,11 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
+		<?php wp_head(); ?>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/templates.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/type.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/sidebar.css" />
@@ -30,7 +30,6 @@
 
 		<meta name="description" content="Línea de Prêt à Porter de ropa para hombre y ropa para mujer. Creada por diseñadoras mexicanas. Venta online, con envíos a toda la república" />
 
-		<?php wp_head(); ?>
 		<script>
         // conditionizr.com
         // configure environment tests
