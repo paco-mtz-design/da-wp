@@ -43,7 +43,7 @@ Aux Stylesheet - Interiors & Templates
 /* Lookbook Template */
 .lookbook_images { margin-bottom: 4.125em; position: relative; top:4px;}
 .lookbook_images ul { text-align: center;}
-.lookbook_images ul li { width: 33.333%; display: inline-block; margin-top:-4px;}
+.lookbook_images ul li { width: 32%; display: inline-block; margin-top:0px;}
 
 /* Campaign Template */
 .campaign_images {margin-bottom: 4.125em;}
