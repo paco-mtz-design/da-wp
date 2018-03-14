@@ -68,10 +68,10 @@
 			<a href="<?php echo home_url(); ?>"><h1>Dâ Wearhouse</h1></a>
 			<nav class="nav-collapse" role="navigation">
 				<ul  id="st-trigger-effects">
-					<li><a href="<?php echo home_url(); ?>">Inicio</a></li>
+					<li><a href="<?php echo home_url(); ?>">Home</a></li>
 					<!-- li id="st-trigger-effects"><a href="#" title="st-effect-3">Acerca</a></li -->
-					<li><a href="<?php echo home_url(); ?>/mujer">Mujer</a></li>
-					<li><a href="https://www.kichink.com/stores/dawearhouse#.VT7esq1VhBf">Tienda</a></li>
+					<li><a href="<?php echo home_url(); ?>/mujer">Lookbook</a></li>
+					<li><a href="https://www.kichink.com/stores/dawearhouse#.VT7esq1VhBf">Store</a></li>
 					<li><a class="socicon" target="_blank" href="https://www.facebook.com/dawearhouse424">b</a></li>
 					<li><a class="socicon" target="_blank"href="https://twitter.com/dawearhousemx">a</a></li>
 					<li><a class="socicon" target="_blank"href="http://instagram.com/dawearhouse">x</a></li>
